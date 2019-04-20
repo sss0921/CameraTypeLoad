@@ -1,5 +1,9 @@
 #include "cameratype.h"
 
+#include <QLoggingCategory>
+
+Q_LOGGING_CATEGORY(cameraType, "CameraTypeLoad.CameraType")
+
 class CameraTypePrivate
 {
 public:
