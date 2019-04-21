@@ -28,15 +28,18 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     cameratype.cpp \
-    cameraarray.cpp
+    cameraarray.cpp \
+    cameraloader.cpp
 
 HEADERS += \
         mainwindow.h \
     cameratype.h \
-    cameraarray.h
+    cameraarray.h \
+    cameraloader.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    cameraloader.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
