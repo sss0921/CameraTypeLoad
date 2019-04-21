@@ -6,17 +6,22 @@ About CameraTypeLoad
 
 ```
 {
-	[
-		Name: "Sony NEX-5R 20mm"
-		SensorWidth: 23.2
-		SensorHeight: 15.4
-		ImageWidth: 4912
-		ImageHeight: 3264
-		FocalLength: 20
-		Landscape: true
-		FixedOrientation: false
-		MinTriggerInteral: 1
-	],
+	"Camera": [
+		{
+			name: "Sony NEX-5R 20mm"
+			sensorWidth: 23.2
+			sensorHeight: 15.4
+			imageWidth: 4912
+			imageHeight: 3264
+			focalLength: 20
+			landscape: true
+			fixedOrientation: false
+			minTriggerInteral: 1
+		},
+		{
+
+		},	
+	]
 	...
 }
 ```
