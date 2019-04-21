@@ -15,9 +15,10 @@ public:
     explicit CameraArray(QObject *parent = nullptr);
     ~CameraArray();
 
-    bool save(const QString &filePath, FileFormat format = BinaryFileFormat) const;
+    bool save(const QString &filePath, FileFormat format = TextFileFormat) const;
     bool load(const QString &filePath) const;
 
+    QMap<int, CameraType> cameraData() const;
     bool cameraExists(int index);
     void appendCamera(const CameraType &type, int index = -1);
     bool removeCamera(int index);

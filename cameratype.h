@@ -8,9 +8,8 @@ class CameraType
 {
 public:
     explicit CameraType();
-    CameraType(const CameraType &other);
 
-    QString Name() const;
+    QString name() const;
     void setName(const QString &name);
 
     double sensorWidth() const;
@@ -38,7 +37,7 @@ public:
     void setMinTriggerInteral(int minTriggerInteral);
 
 private:
-    QSharedDataPointer<CameraTypePrivate> d;
+    CameraTypePrivate *d;
 };
 
 #endif // CAMERATYPE_H

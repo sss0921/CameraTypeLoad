@@ -43,12 +43,7 @@ CameraType::CameraType()
 {
 }
 
-CameraType::CameraType(const CameraType &other)
-    : d(other.d)
-{
-}
-
-QString CameraType::Name() const
+QString CameraType::name() const
 {
     return d->name;
 }
